@@ -212,11 +212,10 @@ We also employ an ensemble learning approach to improve the prediction performan
 - The stroke prediction model achieved satisfactory performance on the test dataset, as evidenced by the evaluation metrics (e.g., accuracy, precision, recall, F1-score, ROC AUC score).
 - The model can be utilized to identify individuals who are at a higher risk of having a stroke, allowing for timely intervention and preventive measures.
 - Further improvements can be made by incorporating more sophisticated feature engineering techniques, exploring different ensemble methods, and obtaining a larger and more diverse dataset for training.
-- Our goal was to predict strokes using demographic and health-related features. We carefully preprocessed the data, handled missing values, and encoded categorical variables. Exploratory data analysis provided valuable insights into feature distribution and their relationship with strokes.
 
-Multiple machine learning models (Logistic Regression, Random Forest, K-Nearest Neighbors, Gaussian Naive Bayes) were trained and evaluated using various performance metrics. To boost accuracy, we created an ensemble model combining their strengths.
+- Our goal was to predict strokes using demographic and health-related features. We carefully preprocessed the data, handled missing values, and encoded categorical variables. Exploratory data analysis provided valuable insights into feature distribution and their relationship with strokes.Multiple machine learning models were trained and evaluated using various performance metrics. To boost accuracy, we created an ensemble model combining their strengths.
 
-The ensemble model was applied to the test dataset, generating predictions saved in "submission.csv" for further analysis or submission. Overall, our project achieved promising results, with the ensemble model outperforming individual models. However, it's important to note that these predictions are based on the specific dataset and may not generalize perfectly to other scenarios.
+-The ensemble model was applied to the test dataset, generating predictions saved in "submission.csv" for further analysis or submission. Overall, our project achieved promising results, with the ensemble model outperforming individual models. However, it's important to note that these predictions are based on the specific dataset and may not generalize perfectly to other scenarios.
 
 ## References
 
