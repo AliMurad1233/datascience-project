@@ -160,19 +160,25 @@ We also employ an ensemble learning approach to improve the prediction performan
    for model in models:
        model.fit(X_train, y_train)
 
-3. **Now we combine the predictions:**
+3. **Combine the predictions:**
 
   After training the base models, the predictions from each model are combined to create an ensemble prediction. The combination can be performed through various methods such as voting, averaging, or weighted averaging.
   
-  ```python
-  predictions = []
+    ```python
+    predictions = []
 
-for model in models:
-    predictions.append(model.predict(X_test))
+    for model in models:
+        predictions.append(model.predict(X_test))
 
-ensemble_prediction = combine_predictions(predictions)
+    ensemble_prediction = combine_predictions(predictions)
 
+4. **Evaluate Ensemble Model:**
 
+  The ensemble prediction is then evaluated against the test data to assess its performance. This can be done by calculating various evaluation metrics such as accuracy, precision, recall, and F1-score.
+
+    '''python
+    ensemble_accuracy = accuracy_score(y_test, ensemble_prediction)
+    '''
 
 
 
