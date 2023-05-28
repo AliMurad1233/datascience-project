@@ -138,6 +138,46 @@ We trained the models to predict the occurrence of strokes based on the provided
 - The individual models used in the ensemble were Logistic Regression, Random Forest Classifier, and Gaussian Naive Bayes.
 - The ensemble technique involved training the individual models on a portion of the training data and using the predictions from these models as inputs to a logistic regression model, which learned to combine the predictions effectively.
 
+
+We also employ an ensemble learning approach to improve the prediction performance. The ensemble model combines the predictions of multiple base models to make a final prediction. The following steps outline the training process for the ensemble model:
+
+1. **Create Base Models:**
+
+   Start by creating individual base models that will be used in the ensemble. These base models can be any machine learning models of your choice. In this project, we use the following models:
+
+   - K-Nearest Neighbors (KNN)
+   - Logistic Regression
+   - Random Forest
+   - Gaussian Naive Bayes
+
+2. **Train Base Models:**
+
+   Each base model is trained using a subset of the training data. The predictions of the base models serve as input for the ensemble model. Here's an example of training the base models:
+
+   ```python
+   models = create_base_models()
+
+   for model in models:
+       model.fit(X_train, y_train)
+
+3. **Now we combine the predictions:**
+
+  After training the base models, the predictions from each model are combined to create an ensemble prediction. The combination can be performed through various methods such as voting, averaging, or weighted averaging.
+  
+  ```python
+  predictions = []
+
+for model in models:
+    predictions.append(model.predict(X_test))
+
+ensemble_prediction = combine_predictions(predictions)
+
+
+
+
+
+
+
 ## Prediction
 
 - The trained ensemble model was used to make predictions on the test dataset.
