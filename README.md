@@ -176,7 +176,7 @@ We also employ an ensemble learning approach to improve the prediction performan
 
    The ensemble prediction is then evaluated against the test data to assess its performance. This can be done by calculating various evaluation metrics such as accuracy, precision, recall, and F1-score.
 
-    '''python
+    ```python
     ensemble_accuracy = accuracy_score(y_test, ensemble_prediction)
 
 
