@@ -71,13 +71,11 @@ For detailed code and visualizations, refer to the `stroke_prediction.ipynb` not
 
 ## Data Preprocessing
 
-- Label encoding and one-hot encoding techniques were applied to handle categorical variables such as gender, work type, smoking status, ever married, and residence type.
-- Numerical features were standardized using the StandardScaler from scikit-learn to ensure they have similar scales.
-- Missing values were not present in the given dataset, but appropriate techniques (e.g., imputation) could be applied if missing data were encountered.
-
 - Before training the models, some preprocessing steps were performed on the dataset:
 
-- **Handling Missing Values**: The dataset was checked for missing values. If any missing values were found, appropriate strategies were applied, such as imputation or removal of missing data, depending on the feature and the extent of missingness.
+- Numerical features were standardized using the StandardScaler from scikit-learn to ensure they have similar scales.
+
+- **Handling Missing Values**: The dataset was checked for missing values and appropriate strategies were applied, such as imputation or removal of missing data, depending on the feature and the extent of missingness.
 
 - **Encoding Categorical Variables**: Categorical variables, including `gender`, `ever_married`, `work_type`, `Residence_type`, and `smoking_status`, were encoded using one-hot encoding or label encoding to convert them into numerical representations suitable for machine learning models.
 
