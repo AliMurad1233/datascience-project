@@ -90,6 +90,50 @@ For detailed code and visualizations, refer to the `stroke_prediction.ipynb` not
 - The models used include Logistic Regression, Random Forest Classifier, K-Nearest Neighbors Classifier, Gaussian Naive Bayes, and Support Vector Machines.
 - The models were trained using the training dataset and evaluated using various performance metrics such as accuracy, precision, recall, F1-score, and ROC AUC score.
 
+
+In this project, we train several machine learning models to predict the occurrence of strokes based on the provided dataset. The following models were used:
+
+- **K-Nearest Neighbors (KNN):**
+  - Parameters: leaf_size=30, n_neighbors=15, p=2, weights='distance'
+  - Code:
+    ```python
+    knn = KNeighborsClassifier(leaf_size=30, n_neighbors=15, p=2, weights='distance')
+    knn.fit(X_train, y_train)
+    ```
+
+- **Logistic Regression:**
+  - Parameters: C=1.0, solver="lbfgs", penalty="l2", class_weight="balanced"
+  - Code:
+    ```python
+    logic = LogisticRegression(C=1.0, solver="lbfgs", penalty="l2", class_weight="balanced")
+    logic.fit(X_train, y_train)
+    ```
+
+- **Random Forest:**
+  - Parameters: n_estimators=100, min_samples_leaf=20, max_depth=8, max_samples=0.8, class_weight='balanced'
+  - Code:
+    ```python
+    random = RandomForestClassifier(n_estimators=100, min_samples_leaf=20, max_depth=8, max_samples=0.8, class_weight='balanced')
+    random.fit(X_train, y_train)
+    ```
+
+- **Gaussian Naive Bayes:**
+  - Parameters: var_smoothing=1
+  - Code:
+    ```python
+    gnb = GaussianNB(var_smoothing=1)
+    gnb.fit(X_train, y_train)
+    ```
+
+- **Ensemble Model:**
+  - Code:
+    ```python
+    models = create_models()
+    blender = train_ensemble(models, X_train1, y_train1, X_val1, y_val1)
+    ```
+
+Feel free to experiment wi
+
 ## Ensemble Model
 
 - An ensemble model was created to combine the predictions of multiple individual models.
