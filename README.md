@@ -180,9 +180,6 @@ We also employ an ensemble learning approach to improve the prediction performan
     ensemble_accuracy = accuracy_score(y_test, ensemble_prediction)
 
 
-
-
-
 ## Prediction
 
 - The trained ensemble model was used to make predictions on the test dataset.
