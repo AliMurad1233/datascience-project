@@ -215,7 +215,7 @@ We also employ an ensemble learning approach to improve the prediction performan
 
 - Our goal was to predict strokes using demographic and health-related features. We carefully preprocessed the data, handled missing values, and encoded categorical variables. Exploratory data analysis provided valuable insights into feature distribution and their relationship with strokes.Multiple machine learning models were trained and evaluated using various performance metrics. To boost accuracy, we created an ensemble model combining their strengths.
 
--The ensemble model was applied to the test dataset, generating predictions saved in "submission.csv" for further analysis or submission. Overall, our project achieved promising results, with the ensemble model outperforming individual models. However, it's important to note that these predictions are based on the specific dataset and may not generalize perfectly to other scenarios.
+- The ensemble model was applied to the test dataset, generating predictions saved in "submission.csv" for further analysis or submission. Overall, our project achieved promising results, with the ensemble model outperforming individual models. However, it's important to note that these predictions are based on the specific dataset and may not generalize perfectly to other scenarios.
 
 ## References
 
