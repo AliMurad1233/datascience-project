@@ -17,7 +17,11 @@ Stroke Prediction Model
 
 ## Introduction
 
-The goal of this project is to develop a stroke prediction model based on various demographic, lifestyle, and health-related features of individuals. The model aims to predict the likelihood of a person having a stroke, which can help in early detection and preventive measures.
+Stroke is a serious medical condition that requires early detection and intervention for effective treatment. Predictive models can play a crucial role in identifying individuals at high risk of stroke, enabling proactive measures to prevent or mitigate its occurrence.
+
+In this project, we leverage a dataset consisting of demographic information, health indicators, and lifestyle attributes to build predictive models for stroke detection. By analyzing this data and training machine learning algorithms, we aim to create models that can accurately classify individuals as either prone to stroke or not.
+
+
 
 ## Data
 
