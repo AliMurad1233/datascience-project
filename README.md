@@ -19,7 +19,7 @@ Stroke Prediction Model
 
 Stroke is a serious medical condition that requires early detection and intervention for effective treatment. Predictive models can play a crucial role in identifying individuals at high risk of stroke, enabling proactive measures to prevent or mitigate its occurrence.
 
-In this project, we leverage a dataset consisting of demographic information, health indicators, and lifestyle attributes to build predictive models for stroke detection. By analyzing this data and training machine learning algorithms, we aim to create models that can accurately classify individuals as either prone to stroke or not.
+In this project, we leverage datasets consisting of demographic information, health indicators, and lifestyle attributes to build predictive models for stroke detection. By analyzing this data and training machine learning algorithms, we aim to create models that can accurately classify individuals as either prone to stroke or not.
 
 
 
