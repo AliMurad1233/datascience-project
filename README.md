@@ -131,7 +131,6 @@ We trained the models to predict the occurrence of strokes based on the provided
     blender = train_ensemble(models, X_train1, y_train1, X_val1, y_val1)
     ```
 
-Feel free to experiment wi
 
 ## Ensemble Model
 
