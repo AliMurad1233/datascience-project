@@ -37,8 +37,9 @@ Before building the predictive models, it's essential to gain insights into the 
 
 ### Dataset Overview
 
-The dataset consists of the following features:
+The datasets consist of the following features:
 
+- `id`: Unique identifier for each record.
 - `age`: Age of the individual.
 - `gender`: Gender of the individual (Male, Female, or Other).
 - `hypertension`: Whether the individual has hypertension (1 for yes, 0 for no).
