@@ -86,12 +86,11 @@ For detailed code and visualizations, refer to the `stroke_prediction.ipynb` not
 
 ## Model Training
 
-- Multiple machine learning models were utilized to build the stroke prediction model.
-- The models used include Logistic Regression, Random Forest Classifier, K-Nearest Neighbors Classifier, Gaussian Naive Bayes, and Support Vector Machines.
+- Multiple machine learning models were utilized to build the stroke prediction model including Logistic Regression, Random Forest Classifier, K-Nearest Neighbors Classifier, Gaussian Naive Bayes.
 - The models were trained using the training dataset and evaluated using various performance metrics such as accuracy, precision, recall, F1-score, and ROC AUC score.
 
 
-In this project, we train several machine learning models to predict the occurrence of strokes based on the provided dataset. The following models were used:
+We trained the models to predict the occurrence of strokes based on the provided dataset. The following models were used:
 
 - **K-Nearest Neighbors (KNN):**
   - Parameters: leaf_size=30, n_neighbors=15, p=2, weights='distance'
