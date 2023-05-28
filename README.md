@@ -24,6 +24,8 @@ The goal of this project is to develop a stroke prediction model based on variou
 - The project utilizes a dataset obtained from the Kaggle competition "Playground Series - Stroke Prediction" (provided in the `train.csv` and `test.csv` files).
 - The dataset contains information about individuals' age, gender, work type, smoking status, residence type, average glucose level, body mass index (BMI), and other factors.
 - Prior to model training, the dataset was divided into a training set and a test set using the `train_test_split` function from scikit-learn.
+- [Download train.csv](/kaggle/input/playground-series-s3e2/train.csv)
+- [Download test.csv](/kaggle/input/playground-series-s3e2/test.csv)
 
 ## Exploratory Data Analysis
 
