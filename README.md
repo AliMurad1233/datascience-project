@@ -186,6 +186,26 @@ We also employ an ensemble learning approach to improve the prediction performan
 - The test dataset was preprocessed in the same way as the training dataset (e.g., encoding categorical variables, scaling numerical features).
 - The final predictions were obtained by applying the ensemble model to the preprocessed test data.
 - The predictions were stored in the "submission.csv" file, which contains the stroke predictions for each individual in the test dataset.
+- This code gives us the predicted output:
+
+    ```python
+    test["gender"] = test["gender"].map({"Male": 1, "Female": 0, 1: 1, 0: 0})
+    test["ever_married"] = test["ever_married"].map({"Yes": 1, "No": 0, 1: 1, 0: 0})
+    test["Residence_type"] = test["Residence_type"].map({"Urban": 1, "Rural": 0, 1: 1, 0: 0})
+
+    encoded_cat_var = pd.DataFrame(ohc.transform(test[enc_feature]).toarray(), columns=ohc.get_feature_names_out(enc_feature))
+    dataF_ = pd.concat([test, encoded_cat_var], axis=1)
+    dataF_ = dataF_.drop(enc_feature + ['id'], axis=1)
+
+    dataF_[numerical_features] = scaler.transform(dataF_[numerical_features])
+
+    predictions = pd.DataFrame({
+        "id": test["id"],
+        "stroke": test_ensemble(models, blender, dataF_, True)[:, 1]
+    })
+    predictions.to_csv("submission.csv", index=False)
+    predictions.head(10)
+
 
 ## Conclusion
 
