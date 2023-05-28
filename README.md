@@ -75,6 +75,17 @@ For detailed code and visualizations, refer to the `stroke_prediction.ipynb` not
 - Numerical features were standardized using the StandardScaler from scikit-learn to ensure they have similar scales.
 - Missing values were not present in the given dataset, but appropriate techniques (e.g., imputation) could be applied if missing data were encountered.
 
+- Before training the models, some preprocessing steps were performed on the dataset:
+
+- **Handling Missing Values**: The dataset was checked for missing values. If any missing values were found, appropriate strategies were applied, such as imputation or removal of missing data, depending on the feature and the extent of missingness.
+
+- **Encoding Categorical Variables**: Categorical variables, including `gender`, `ever_married`, `work_type`, `Residence_type`, and `smoking_status`, were encoded using one-hot encoding or label encoding to convert them into numerical representations suitable for machine learning models.
+
+- **Feature Scaling**: Numerical features (`age`, `avg_glucose_level`, `bmi`) were scaled using standardization or normalization techniques to ensure all features have a similar scale and prevent any particular feature from dominating the learning process.
+
+- **Train-Test Split**: The preprocessed dataset was split into training and testing sets using the `train_test_split` function from `sklearn.model_selection`. This division allows us to evaluate the performance of the trained models on unseen data.
+
+
 ## Model Training
 
 - Multiple machine learning models were utilized to build the stroke prediction model.
