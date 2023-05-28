@@ -1,7 +1,8 @@
 # datascience-project
 # Stroke Prediction
 
-Stroke Prediction Model
+Ali Murad
+Yazan Alkanaan
 
 ## Table of Contents
 
