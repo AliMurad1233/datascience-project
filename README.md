@@ -33,9 +33,40 @@ In this project, we leverage datasets consisting of demographic information, hea
 
 ## Exploratory Data Analysis
 
-- The data was analyzed to gain insights into the distribution and relationships between variables.
-- Visualizations such as bar plots, histograms, and heatmaps were created using libraries like matplotlib and seaborn.
-- Key observations and patterns in the data were identified, including the distribution of stroke cases across different categorical variables and the correlation between numerical features.
+Before building the predictive models, it's essential to gain insights into the data through exploratory data analysis. In this section, we examine the characteristics of the dataset and visualize the relationships between different features.
+
+### Dataset Overview
+
+The dataset consists of the following features:
+
+- `age`: Age of the individual.
+- `gender`: Gender of the individual (Male, Female, or Other).
+- `hypertension`: Whether the individual has hypertension (1 for yes, 0 for no).
+- `heart_disease`: Whether the individual has heart disease (1 for yes, 0 for no).
+- `ever_married`: Marital status of the individual (Yes or No).
+- `work_type`: Type of work the individual is engaged in.
+- `Residence_type`: Type of residence of the individual (Urban or Rural).
+- `avg_glucose_level`: Average glucose level in the individual's blood.
+- `bmi`: Body mass index (BMI) of the individual.
+- `smoking_status`: Smoking status of the individual.
+- `stroke`: Target variable indicating whether the individual had a stroke (1 for yes, 0 for no).
+
+### Data Visualization
+
+To gain insights into the data, various visualizations are created:
+
+- Distribution of Categorical Features: Bar plots are used to visualize the distribution of categorical features (`gender`, `work_type`, `smoking_status`, `Residence_type`, `ever_married`, `heart_disease`, and `hypertension`) and the occurrence of strokes.
+
+- Distribution of Numerical Features: Histograms with kernel density estimation (KDE) are used to visualize the distribution of numerical features (`age`, `avg_glucose_level`, and `bmi`) and the occurrence of strokes.
+
+- Relationship Between Categorical Features and Stroke: Grouped bar plots are created to explore the relationship between different categorical features and the occurrence of strokes.
+
+- Correlation Matrix: A heatmap is generated to visualize the correlation between numerical features (`age`, `avg_glucose_level`, and `bmi`).
+
+These visualizations provide valuable insights into the distribution of features and their relationships with the target variable, helping us understand the data better and identify any potential patterns or trends.
+
+For detailed code and visualizations, refer to the `stroke_prediction.ipynb` notebook in this repository.
+
 
 ## Data Preprocessing
 
