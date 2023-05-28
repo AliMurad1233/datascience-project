@@ -162,7 +162,7 @@ We also employ an ensemble learning approach to improve the prediction performan
 
 3. **Combine the predictions:**
 
-  After training the base models, the predictions from each model are combined to create an ensemble prediction. The combination can be performed through various methods such as voting, averaging, or weighted averaging.
+   After training the base models, the predictions from each model are combined to create an ensemble prediction. The combination can be performed through various methods such as voting, averaging, or weighted averaging.
   
     ```python
     predictions = []
@@ -174,7 +174,7 @@ We also employ an ensemble learning approach to improve the prediction performan
 
 4. **Evaluate Ensemble Model:**
 
-  The ensemble prediction is then evaluated against the test data to assess its performance. This can be done by calculating various evaluation metrics such as accuracy, precision, recall, and F1-score.
+   The ensemble prediction is then evaluated against the test data to assess its performance. This can be done by calculating various evaluation metrics such as accuracy, precision, recall, and F1-score.
 
     '''python
     ensemble_accuracy = accuracy_score(y_test, ensemble_prediction)
