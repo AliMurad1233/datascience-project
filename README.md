@@ -1,5 +1,5 @@
 # datascience-project
-# Project Title
+# Stroke Prediction
 
 Stroke Prediction Model
 
