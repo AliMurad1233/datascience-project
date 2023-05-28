@@ -178,7 +178,6 @@ We also employ an ensemble learning approach to improve the prediction performan
 
     '''python
     ensemble_accuracy = accuracy_score(y_test, ensemble_prediction)
-    '''
 
 
 
