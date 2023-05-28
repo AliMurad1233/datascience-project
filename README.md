@@ -212,10 +212,11 @@ We also employ an ensemble learning approach to improve the prediction performan
 - The stroke prediction model achieved satisfactory performance on the test dataset, as evidenced by the evaluation metrics (e.g., accuracy, precision, recall, F1-score, ROC AUC score).
 - The model can be utilized to identify individuals who are at a higher risk of having a stroke, allowing for timely intervention and preventive measures.
 - Further improvements can be made by incorporating more sophisticated feature engineering techniques, exploring different ensemble methods, and obtaining a larger and more diverse dataset for training.
-- We aimed to predict the occurrence of strokes based on various demographic and health-related features. We performed extensive data preprocessing, including handling missing values and encoding categorical variables. Additionally, we conducted exploratory data analysis to gain insights into the distribution of different features and their relationship with strokes.
-- We trained multiple machine learning models, including Logistic Regression, Random Forest, K-Nearest Neighbors, and Gaussian Naive Bayes. We evaluated each model's performance using accuracy, precision, recall, F1-score, and ROC AUC score. Furthermore, we created an ensemble of these models to improve the predictive performance.
-- After training the ensemble model, we applied it to the test dataset to make predictions on unseen data. The predictions were then saved in the "submission.csv" file for further analysis or submission.
-- Overall, the project achieved promising results in predicting strokes based on the provided dataset. The ensemble model demonstrated improved performance compared to individual models. However, it is important to note that the predictions are based on the specific dataset used and may not generalize perfectly to other scenarios.
+- Our goal was to predict strokes using demographic and health-related features. We carefully preprocessed the data, handled missing values, and encoded categorical variables. Exploratory data analysis provided valuable insights into feature distribution and their relationship with strokes.
+
+Multiple machine learning models (Logistic Regression, Random Forest, K-Nearest Neighbors, Gaussian Naive Bayes) were trained and evaluated using various performance metrics. To boost accuracy, we created an ensemble model combining their strengths.
+
+The ensemble model was applied to the test dataset, generating predictions saved in "submission.csv" for further analysis or submission. Overall, our project achieved promising results, with the ensemble model outperforming individual models. However, it's important to note that these predictions are based on the specific dataset and may not generalize perfectly to other scenarios.
 
 ## References
 
